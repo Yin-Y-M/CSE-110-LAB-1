@@ -1,21 +1,128 @@
 <!DOCTYPE html>
 <html>
-<body>
-    
-<img src="logo_UCSD.png" alt="UCSD logo" width="510" height="102">
-<a href="#section1">Section 1</a>
-<a href="#section2">Section 2</a>
+    <head>
+        <style>
+            #section1, #section2, #section3 {
+                scroll-margin-top: 100px;
+                width: 100%;
+            }
+            
+            #section1, #section3 {
+                display: inline-block;
+                background-color: rgb(245, 240, 230);
+            }
 
-<h2 id="section1">Section 1</h2>
-<div>
-    <img src="ucsd-athletics-logo.svg" alt="Tritons logo" width="600" height="100">
-</div>
+            #section2 {
+                display: inline-block;
+                color: white;
+                background-image: url("https://www.ucsd.edu/_resources/img/bg-orbs-1.jpg");
+                background-size: cover;
+                background-position: center;
+            }
 
-<h2 id="section2">Section 2</h2>
-<div>
-    <img src="logos-college-logos-07-23.svg" alt="Tritons logo" width="1500" height="300">
-</div>
+            #navbar {
+                position: sticky;
+                top: 0;
+                overflow: hidden;
+                background-color: white;
+              }
+              
+            #navbar a {
+                float: left;
+                display: block;
+                color: black;
+                text-align: center;
+                text-decoration: none;
+                font-size: 28px;
+                padding: 14px 20px;
+            }
+              
+            #navbar a:hover {
+                background-color: #182b49;
+                color: white
+            }
 
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+              }
 
-</body>
+            li {
+                float: left;
+            }
+
+            .grid-container {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                grid-auto-flow: column;
+                column-gap: 25px;
+            }
+            .column {
+                float: left;
+                background-color: #182b49;
+                padding: 20px;
+                font-size: 25px;
+                text-align: center;
+                max-height: 500px;
+                overflow: auto;
+                color: white;
+            }
+
+            p {
+                font-size: 28px;
+            }
+
+        </style>
+    </head>
+    <body>
+        
+        <div id="navbar">
+            <img src="https://www.ucsd.edu/_resources/img/logo_UCSD.png" alt="UCSD logo" style="max-width: 400px;">
+            <ul>
+                <li><a href="#section1"> Section 1 </a></li>
+                <li><a href="#section2"> Section 2 </a></li>
+                <li><a href="#section3"> Section 3 </a></li>
+            </ul>
+        </div>
+            
+        
+
+        
+        <div id="section1">
+            <h2>Section 1</h2>
+            <img src="https://brand.ucsd.edu/_images/logos-and-brand-elements/additional-campus-logos/ucsd-athletics-logo.svg" alt="Tritons logo">
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam, labore architecto velit ab quo earum, eveniet maiores perferendis officiis, optio incidunt inventore exercitationem vel assumenda autem! Unde, architecto natus! Magni?
+            </p>
+        </div>
+
+        
+        <div id="section2">
+            <h2>Section 2</h2>
+            <img src="https://brand.ucsd.edu/_images/logos/logos-college-logos-07-23.svg " alt="college logo" width="1500" height="300">
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut velit suscipit nemo accusantium ab quisquam, sint dolorum corporis itaque quaerat magni cumque omnis fugit optio accusamus, excepturi eius minus error quas aliquid a rem cum ipsum. Quasi assumenda magni sequi vero praesentium ipsam, modi cupiditate cumque beatae esse, eos, eligendi consequatur odio illo totam accusamus officiis! Quam possimus expedita quia at voluptate, quae provident, id, vel itaque sed veniam. Vel, consequuntur dolor culpa reiciendis consectetur nam, non libero ipsum magnam aspernatur eos at officia labore nihil veritatis corrupti atque. Ullam sequi sapiente dolorem. Aliquid beatae saepe voluptas dignissimos quidem aut?
+            </p>
+        </div>
+
+        <div id="section3">
+            <h2>Section 3</h2>
+            <div class="grid-container">
+                <div class="column">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus aliquid molestias unde porro accusamus cumque eaque veniam quae optio officia? Inventore eligendi accusantium alias saepe dolores vitae aperiam deleniti adipisci.</p>
+                </div>
+                <div class="column">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore repellendus accusantium consequatur delectus neque adipisci eveniet veniam commodi ratione obcaecati a magnam dolorum, fugiat in laborum ea aperiam, atque saepe?</p>
+                </div>
+                <div class="column">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, vero minus fugiat, eaque voluptatibus nisi neque consequatur optio aliquid id amet facere vitae, ducimus eos sed provident aut nobis sequi?</p>
+                </div>
+                <div class="column">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, vero minus fugiat, eaque voluptatibus nisi neque consequatur optio aliquid id amet facere vitae, ducimus eos sed provident aut nobis sequi?</p>
+                </div>
+            </div>
+        </div>
+    </body>
 </html>
