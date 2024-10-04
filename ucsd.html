@@ -1,7 +1,14 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta name="viewport" content="width=device-width,initial-scale=1"/>
         <style>
+
+            section img {
+                max-width: 100%;
+                height: auto;
+            }
+
             #section1, #section2, #section3 {
                 scroll-margin-top: 100px;
                 width: 100%;
@@ -53,12 +60,18 @@
                 float: left;
             }
 
+            h2 {
+                font-size: 28px
+            }
+
             .grid-container {
                 display: grid;
                 grid-template-columns: repeat(4, 1fr);
                 grid-auto-flow: column;
                 column-gap: 25px;
+                row-gap: 25px;
             }
+
             .column {
                 float: left;
                 background-color: #182b49;
@@ -70,10 +83,49 @@
                 color: white;
             }
 
-            p {
+            /* p {
                 font-size: 28px;
-            }
+            } */
 
+            @media (max-width: 800px) {
+                #navbar a {
+                    display: none;
+                }
+            
+                #navbar img {
+                    max-width: 75%;
+                }
+            
+                header {
+                    font-size: 24px;
+                }
+            
+                p {
+                    font-size: 20px;
+                }
+            
+                .grid-container {
+                    display: grid;
+                    grid-template-columns: auto auto/*repeat(2,1fr)*/;
+                }
+
+                .item1 {
+                    grid-column: 1;
+                    grid-row: 1;
+                }
+                .item2 {
+                    grid-column: 1;
+                    grid-row: 2;
+                }
+                .item3 {
+                    grid-column: 2;
+                    grid-row: 1;
+                }
+                .item4 {
+                    grid-column: 2;
+                    grid-row: 2;
+                }
+            }
         </style>
     </head>
     <body>
@@ -87,40 +139,37 @@
             </ul>
         </div>
             
-        
-
-        
         <div id="section1">
             <h2>Section 1</h2>
             <img src="https://brand.ucsd.edu/_images/logos-and-brand-elements/additional-campus-logos/ucsd-athletics-logo.svg" alt="Tritons logo">
             <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam, labore architecto velit ab quo earum, eveniet maiores perferendis officiis, optio incidunt inventore exercitationem vel assumenda autem! Unde, architecto natus! Magni?
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae tempora, at similique omnis nostrum quae facere quisquam id dolorem eos dolor ex culpa autem tenetur, laborum molestiae consequatur totam! Omnis.
             </p>
         </div>
 
         
         <div id="section2">
             <h2>Section 2</h2>
-            <img src="https://brand.ucsd.edu/_images/logos/logos-college-logos-07-23.svg " alt="college logo" width="1500" height="300">
+            <img src="https://brand.ucsd.edu/_images/logos/logos-college-logos-07-23.svg " alt="college logo">
             <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut velit suscipit nemo accusantium ab quisquam, sint dolorum corporis itaque quaerat magni cumque omnis fugit optio accusamus, excepturi eius minus error quas aliquid a rem cum ipsum. Quasi assumenda magni sequi vero praesentium ipsam, modi cupiditate cumque beatae esse, eos, eligendi consequatur odio illo totam accusamus officiis! Quam possimus expedita quia at voluptate, quae provident, id, vel itaque sed veniam. Vel, consequuntur dolor culpa reiciendis consectetur nam, non libero ipsum magnam aspernatur eos at officia labore nihil veritatis corrupti atque. Ullam sequi sapiente dolorem. Aliquid beatae saepe voluptas dignissimos quidem aut?
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus provident corporis natus delectus optio molestias saepe deleniti nemo id voluptatibus eligendi, distinctio amet? Velit rem at odit incidunt ipsa et architecto animi nesciunt tempora nostrum veritatis, laboriosam vel dolores sapiente quasi nulla, hic tenetur voluptas accusamus ab, nisi nemo ea. In cupiditate, rerum ad numquam sunt tempore quam dicta unde temporibus ipsam veritatis odio iusto aperiam vel. Ab atque nobis ratione nostrum eius? Rerum aliquid sequi totam, fuga voluptatibus molestias molestiae, officiis reprehenderit dolor explicabo reiciendis porro, tempora quisquam. Corrupti doloremque saepe, amet mollitia placeat laboriosam blanditiis molestias cumque earum.
             </p>
         </div>
 
         <div id="section3">
             <h2>Section 3</h2>
             <div class="grid-container">
-                <div class="column">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus aliquid molestias unde porro accusamus cumque eaque veniam quae optio officia? Inventore eligendi accusantium alias saepe dolores vitae aperiam deleniti adipisci.</p>
+                <div class="column item1">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id neque, suscipit iure eum sed est quidem repudiandae molestias ipsum libero inventore expedita a odit, quia dolorum animi laborum porro consequatur error dicta deserunt necessitatibus, dolor soluta. Dolore aliquam reprehenderit dolores, quisquam voluptas quas nulla nisi deleniti error ad quibusdam aspernatur ratione nam, voluptatibus incidunt tempora. Rem autem neque sapiente illo, repudiandae optio, natus consectetur ex ad sed aliquam reprehenderit, nam vero iusto tenetur expedita porro?</p>
                 </div>
-                <div class="column">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore repellendus accusantium consequatur delectus neque adipisci eveniet veniam commodi ratione obcaecati a magnam dolorum, fugiat in laborum ea aperiam, atque saepe?</p>
+                <div class="column item2">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit saepe, ipsa facilis officia aliquid asperiores corrupti harum maiores optio architecto nihil quibusdam, nulla exercitationem praesentium temporibus obcaecati quos, facere fugit placeat dolore blanditiis? Ad, quam nulla? Expedita maxime aut saepe cum at tempora repudiandae nobis eaque placeat unde commodi quos ab non sunt, quia obcaecati, quasi illum quod? Possimus, nam? Cumque non modi nihil quam nobis minima, harum praesentium quidem dolor illo aliquid sunt eius?</p>
                 </div>
-                <div class="column">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, vero minus fugiat, eaque voluptatibus nisi neque consequatur optio aliquid id amet facere vitae, ducimus eos sed provident aut nobis sequi?</p>
+                <div class="column item3">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse repudiandae nulla nam voluptatem totam deleniti, ipsum cumque quibusdam. Molestiae error, ipsum sint iure officiis laborum esse tempora eligendi unde vero. Veniam tenetur eius amet iusto! Beatae delectus dolore error quos rem culpa magni reiciendis voluptate ex distinctio, quasi minima sed ad laudantium illum molestias nostrum cumque magnam eveniet doloribus, est quidem totam dolorem. Rem, nulla! Ipsam temporibus itaque odit eius fugit illo quas quod pariatur minima, possimus commodi iure tempore.</p>
                 </div>
-                <div class="column">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, vero minus fugiat, eaque voluptatibus nisi neque consequatur optio aliquid id amet facere vitae, ducimus eos sed provident aut nobis sequi?</p>
+                <div class="column item4">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod dignissimos quis minima esse error iste blanditiis voluptas, provident laboriosam velit alias doloribus harum laudantium culpa autem totam nesciunt aut vero beatae! Ipsum odit vel expedita, veniam placeat labore deleniti cupiditate vitae accusamus sed, architecto in temporibus suscipit fugiat sunt. Accusamus, ab praesentium perspiciatis est officia sequi molestiae, exercitationem culpa, odit ut dolore. Quos laudantium quaerat alias harum veritatis itaque quisquam, vel sed incidunt aut ipsum?</p>
                 </div>
             </div>
         </div>
